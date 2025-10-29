@@ -14,55 +14,55 @@ export function ProjectsSection() {
     {
       title: t('projects.items.0.title'),
       description: t('projects.items.0.description'),
-      image: 'https://images.unsplash.com/photo-1683368392119-96f38e599cea?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxyb2NrJTIwY29uY2VydCUyMGZlc3RpdmFsJTIwc3RhZ2V8ZW58MXx8fHwxNzYxNzYwNDEyfDA&ixlib=rb-4.1.0&q=80&w=1080',
+      image: 'https://upload.wikimedia.org/wikipedia/commons/b/b4/Rock_in_Rio_-_Madrid_2012.jpg',
       technologies: ['Flutter', 'Bloc', 'Firebase', 'Google Maps', 'Push Notifications'],
       github: 'https://github.com/jaumpelicon/',
-      live: 'https://apps.apple.com/br/app/rock-in-rio/id',
+      live: 'https://apps.apple.com/us/app/rock-in-rio/id1478184797',
       featured: true
     },
     {
       title: t('projects.items.1.title'),
       description: t('projects.items.1.description'),
-      image: 'https://images.unsplash.com/photo-1611810293387-c8afe03cd7dd?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtdXNpYyUyMGZlc3RpdmFsJTIwY3Jvd2QlMjBsaWdodHN8ZW58MXx8fHwxNzYxNzI1OTM3fDA&ixlib=rb-4.1.0&q=80&w=1080',
+      image: 'https://s2-redeglobo.glbimg.com/zWlIzM0Il6Mt_69jYOpv5lPHliA=/0x0:2844x1582/924x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_b58693ed41d04a39826739159bf600a0/internal_photos/bs/2025/u/c/JjB2OxSQSMlv8r98BV5w/captura-de-tela-2025-09-12-as-15.18.34.png',
       technologies: ['Flutter', 'Clean Architecture', 'Bloc', 'GraphQL', 'Atomic Design'],
       github: 'https://github.com/jaumpelicon/',
-      live: 'https://apps.apple.com/br/app/the-town/id',
+      live: 'https://apps.apple.com/us/app/the-town/id6446201849',
       featured: true
     },
     {
       title: t('projects.items.2.title'),
       description: t('projects.items.2.description'),
-      image: 'https://images.unsplash.com/photo-1597226133863-eaf2f4308546?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjdWx0dXJhbCUyMGNlbnRlciUyMHRoZWF0ZXJ8ZW58MXx8fHwxNzYxNzYwNDEzfDA&ixlib=rb-4.1.0&q=80&w=1080',
+      image: 'https://images.sympla.com.br/60c3b139d32cd.png',
       technologies: ['Flutter', 'Firebase', 'REST API', 'GetIt', 'GoRouter'],
       github: 'https://github.com/jaumpelicon/',
-      live: '#',
+      live: 'https://apps.apple.com/us/app/encontre-no-sesc/id6443436934',
       featured: false
     },
     {
       title: t('projects.items.3.title'),
       description: t('projects.items.3.description'),
-      image: 'https://images.unsplash.com/photo-1738713988509-355796e88d4e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxyZWFsJTIwZXN0YXRlJTIwcHJvcGVydHklMjBob3VzZXxlbnwxfHx8fDE3NjE3NjA0MTN8MA&ixlib=rb-4.1.0&q=80&w=1080',
+      image: 'https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/c2/60/ed/c260ede4-93c8-e363-6d4e-374d835a601b/AppIcon-0-0-1x_U007emarketing-0-11-0-85-220.png/230x0w.webp',
       technologies: ['Flutter', 'MVVM', 'Firebase', 'Google Maps', 'WebSocket'],
       github: 'https://github.com/jaumpelicon/',
-      live: '#',
+      live: 'https://apps.apple.com/br/app/hubhouse/id6747359779',
       featured: false
     },
-    {
-      title: t('projects.items.4.title'),
-      description: t('projects.items.4.description'),
-      image: 'https://images.unsplash.com/photo-1601106711560-ffeb65211600?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxzcG9ydHMlMjBmaXRuZXNzJTIwZ3ltfGVufDF8fHx8MTc2MTc2MDQxNHww&ixlib=rb-4.1.0&q=80&w=1080',
-      technologies: ['Kotlin', 'MVVM', 'Room', 'Retrofit', 'Coroutines'],
-      github: 'https://github.com/jaumpelicon/',
-      live: '#',
-      featured: false
-    },
+    // {
+    //   title: t('projects.items.4.title'),
+    //   description: t('projects.items.4.description'),
+    //   image: 'https://images.unsplash.com/photo-1601106711560-ffeb65211600?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxzcG9ydHMlMjBmaXRuZXNzJTIwZ3ltfGVufDF8fHx8MTc2MTc2MDQxNHww&ixlib=rb-4.1.0&q=80&w=1080',
+    //   technologies: ['Kotlin', 'MVVM', 'Room', 'Retrofit', 'Coroutines'],
+    //   github: 'https://github.com/jaumpelicon/',
+    //   live: '#',
+    //   featured: false
+    // },
     {
       title: t('projects.items.5.title'),
       description: t('projects.items.5.description'),
-      image: 'https://images.unsplash.com/photo-1652018440238-1aeb20a803a7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxldmVudCUyMHRpY2tldHMlMjBtb2JpbGV8ZW58MXx8fHwxNzYxNjk5MzI2fDA&ixlib=rb-4.1.0&q=80&w=1080',
+      image: 'https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/35/f6/ed/35f6ed6c-91cc-8cd7-b5bb-b349ceddeaec/meubilheteAppIcon-0-0-1x_U007emarketing-0-8-0-0-85-220.png/230x0w.webp',
       technologies: ['Flutter', 'Bloc', 'QR Code', 'Dio', 'Local Storage'],
       github: 'https://github.com/jaumpelicon/',
-      live: '#',
+      live: 'https://apps.apple.com/br/app/meu-bilhete-produtor/id6747603643',
       featured: false
     }
   ]
@@ -124,7 +124,7 @@ export function ProjectsSection() {
                     </motion.a>
                   </div>
                 </div>
-                
+
                 <div className="p-6">
                   <h3 className="text-xl text-white mb-3 group-hover:text-emerald-400 transition-colors duration-300">
                     {project.title}
@@ -191,7 +191,7 @@ export function ProjectsSection() {
                     </a>
                   </div>
                 </div>
-                
+
                 <div className="p-4">
                   <h4 className="text-lg text-white mb-2 group-hover:text-emerald-400 transition-colors duration-300">
                     {project.title}
@@ -222,8 +222,8 @@ export function ProjectsSection() {
           viewport={{ once: true }}
           className="text-center mt-12"
         >
-          <Button 
-            variant="outline" 
+          <Button
+            variant="outline"
             className="border-emerald-500/50 text-emerald-400 hover:bg-emerald-500/10 px-8 py-3"
             onClick={() => window.open('https://github.com/jaumpelicon/', '_blank')}
           >
