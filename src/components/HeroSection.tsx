@@ -3,8 +3,10 @@
 import { motion } from 'motion/react'
 import { Button } from './ui/button'
 import { ArrowDown, Github, Linkedin, Mail } from 'lucide-react'
+import { useTranslation } from 'react-i18next'
 
 export function HeroSection() {
+  const { t } = useTranslation();
   const scrollToProjects = () => {
     const element = document.getElementById('projects')
     if (element) {
@@ -21,7 +23,7 @@ export function HeroSection() {
             key={i}
             className="absolute w-1 h-1 bg-white/20 rounded-full"
             initial={{ opacity: 0 }}
-            animate={{ 
+            animate={{
               opacity: [0, 1, 0],
               scale: [0, 1, 0]
             }}
@@ -51,7 +53,7 @@ export function HeroSection() {
             transition={{ delay: 0.2 }}
             className="text-emerald-400 text-lg tracking-wider"
           >
-            Olá, eu sou
+            {t('hero.greeting')}
           </motion.p>
           
           <motion.h1
@@ -60,7 +62,7 @@ export function HeroSection() {
             transition={{ delay: 0.4 }}
             className="text-5xl md:text-7xl text-white mb-6"
           >
-            João Carlos Peliçon Ramos
+            {t('hero.name')}
           </motion.h1>
           
           <motion.div
@@ -70,11 +72,11 @@ export function HeroSection() {
             className="text-2xl md:text-4xl text-gray-300 mb-8"
           >
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 to-blue-400">
-              Desenvolvedor Mobile
+              {t('hero.title')}
             </span>
-            {' '}especializado em{' '}
+            {' '}{t('hero.specialization')}{' '}
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-400">
-              Flutter | Android | iOS
+              {t('hero.tech')}
             </span>
           </motion.div>
           
@@ -84,8 +86,7 @@ export function HeroSection() {
             transition={{ delay: 0.8 }}
             className="text-gray-400 text-lg max-w-2xl mx-auto mb-8"
           >
-            Construo aplicativos móveis excepcionais usando Flutter, Kotlin e Swift. 
-            Apaixonado por código limpo, arquitetura escalável e entrega de soluções inovadoras.
+            {t('hero.description')}
           </motion.p>
           
           <motion.div
@@ -98,7 +99,7 @@ export function HeroSection() {
               onClick={scrollToProjects}
               className="bg-emerald-500 hover:bg-emerald-600 text-white px-8 py-3 rounded-lg transition-all duration-300 transform hover:scale-105"
             >
-              View My Work
+              {t('hero.button')}
             </Button>
             
             <div className="flex items-center space-x-4">

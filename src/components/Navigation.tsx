@@ -2,8 +2,10 @@
 
 import { motion } from 'motion/react'
 import { useState, useEffect } from 'react'
+import { useTranslation } from 'react-i18next'
 
 export function Navigation() {
+  const { t } = useTranslation();
   const [scrolled, setScrolled] = useState(false)
 
   useEffect(() => {
@@ -42,11 +44,11 @@ export function Navigation() {
           
           <div className="hidden md:flex items-center space-x-8">
             {[
-              { id: 'home', label: 'Início' },
-              { id: 'about', label: 'Sobre' },
-              { id: 'skills', label: 'Habilidades' },
-              { id: 'projects', label: 'Projetos' },
-              { id: 'contact', label: 'Contato' }
+              { id: 'home', label: t('nav.home') },
+              { id: 'about', label: t('nav.about') },
+              { id: 'skills', label: t('nav.skills') },
+              { id: 'projects', label: t('nav.projects') },
+              { id: 'contact', label: t('nav.contact') }
             ].map((item, index) => (
               <motion.button
                 key={item.id}

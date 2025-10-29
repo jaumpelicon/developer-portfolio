@@ -3,28 +3,31 @@
 import { motion } from 'motion/react'
 import { Card } from './ui/card'
 import { Code, Coffee, Lightbulb, Users } from 'lucide-react'
+import { useTranslation } from 'react-i18next'
 
 export function AboutSection() {
+  const { t } = useTranslation();
+
   const features = [
     {
       icon: Code,
-      title: 'Clean Architecture',
-      description: 'Aplicação de MVVM, MVC e Clean Architecture com código limpo e escalável.'
+      title: t('about.features.0.title'),
+      description: t('about.features.0.description')
     },
     {
       icon: Lightbulb,
-      title: 'Inovação',
-      description: 'Explorando novas tecnologias mobile e soluções criativas para desafios complexos.'
+      title: t('about.features.1.title'),
+      description: t('about.features.1.description')
     },
     {
       icon: Users,
-      title: 'Trabalho em Equipe',
-      description: 'Colaboração efetiva em modelo ágil com cultura de feedbacks e diálogo aberto.'
+      title: t('about.features.2.title'),
+      description: t('about.features.2.description')
     },
     {
       icon: Coffee,
-      title: 'Melhoria Contínua',
-      description: 'Dedicado ao aprendizado contínuo e evolução constante de habilidades.'
+      title: t('about.features.3.title'),
+      description: t('about.features.3.description')
     }
   ]
 
@@ -38,10 +41,10 @@ export function AboutSection() {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <h2 className="text-4xl md:text-5xl text-white mb-6">Sobre Mim</h2>
+          <h2 className="text-4xl md:text-5xl text-white mb-6">{t('about.title')}</h2>
           <div className="w-24 h-1 bg-gradient-to-r from-emerald-400 to-blue-400 mx-auto"></div>
         </motion.div>
-        
+
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <motion.div
             initial={{ opacity: 0, x: -50 }}
@@ -51,21 +54,15 @@ export function AboutSection() {
             className="space-y-6"
           >
             <h3 className="text-2xl text-white mb-4">
-              Apaixonado por criar aplicativos mobile que fazem a diferença
+              {t('about.subtitle')}
             </h3>
             <p className="text-gray-300 leading-relaxed">
-              Com mais de 3 anos de experiência em desenvolvimento mobile, tive o privilégio de trabalhar 
-              com empresas como CI&T, Compass UOL e Jera Software, entregando aplicativos escaláveis e de 
-              alta qualidade. Minha jornada começou com Ciência da Computação na UFMS e evoluiu para uma 
-              paixão por criar aplicações móveis seamless e performáticas.
+              {t('about.description1')}
             </p>
             <p className="text-gray-300 leading-relaxed">
-              Sou especialista em Flutter, Kotlin e Swift, com experiência sólida em arquitetura limpa, 
-              gerenciamento de estado com Bloc, integração com APIs REST e GraphQL, e CI/CD. Flexível e 
-              adaptável, adoro desafios e me empolgo em aprender novas tecnologias para entregar as soluções 
-              mais inovadoras. Também possuo experiência em backend com Ruby on Rails, Node.js e Spring Boot.
+              {t('about.description2')}
             </p>
-            
+
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -73,7 +70,7 @@ export function AboutSection() {
               viewport={{ once: true }}
               className="flex flex-wrap gap-3 mt-6"
             >
-              {['Proativo', 'Colaborativo', 'Adaptável', 'Resiliente'].map((trait, index) => (
+              {t('about.traits', { returnObjects: true }).map((trait, index) => (
                 <span
                   key={trait}
                   className="px-4 py-2 bg-emerald-500/20 text-emerald-400 rounded-full text-sm border border-emerald-500/30"
@@ -83,7 +80,7 @@ export function AboutSection() {
               ))}
             </motion.div>
           </motion.div>
-          
+
           <motion.div
             initial={{ opacity: 0, x: 50 }}
             whileInView={{ opacity: 1, x: 0 }}

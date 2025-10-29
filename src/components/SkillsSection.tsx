@@ -2,11 +2,14 @@
 
 import { motion } from 'motion/react'
 import { Card } from './ui/card'
+import { useTranslation } from 'react-i18next'
 
 export function SkillsSection() {
+  const { t } = useTranslation();
+
   const skillCategories = [
     {
-      title: 'Mobile',
+      title: t('skills.categories.0.title'),
       skills: [
         { name: 'Flutter', level: 95, color: 'from-blue-400 to-blue-600' },
         { name: 'Kotlin', level: 90, color: 'from-purple-500 to-purple-700' },
@@ -15,7 +18,7 @@ export function SkillsSection() {
       ]
     },
     {
-      title: 'Backend & Frontend',
+      title: t('skills.categories.1.title'),
       skills: [
         { name: 'Node.js / Nest.js', level: 85, color: 'from-green-500 to-green-700' },
         { name: 'Ruby on Rails', level: 88, color: 'from-red-500 to-red-700' },
@@ -24,7 +27,7 @@ export function SkillsSection() {
       ]
     },
     {
-      title: 'Arquitetura & DevOps',
+      title: t('skills.categories.2.title'),
       skills: [
         { name: 'Clean Architecture', level: 92, color: 'from-indigo-400 to-indigo-600' },
         { name: 'CI/CD / Fastlane', level: 88, color: 'from-blue-600 to-blue-800' },
@@ -44,10 +47,10 @@ export function SkillsSection() {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <h2 className="text-4xl md:text-5xl text-white mb-6">Habilidades & Tecnologias</h2>
+          <h2 className="text-4xl md:text-5xl text-white mb-6">{t('skills.title')}</h2>
           <div className="w-24 h-1 bg-gradient-to-r from-purple-400 to-pink-400 mx-auto"></div>
           <p className="text-gray-400 mt-6 max-w-2xl mx-auto">
-            Tecnologias e ferramentas que utilizo para criar aplicações de alta qualidade
+            {t('skills.subtitle')}
           </p>
         </motion.div>
         
@@ -110,7 +113,7 @@ export function SkillsSection() {
           viewport={{ once: true }}
           className="mt-16 text-center"
         >
-          <h3 className="text-2xl text-white mb-8">Tecnologias com as quais trabalho</h3>
+          <h3 className="text-2xl text-white mb-8">{t('skills.techTitle')}</h3>
           <div className="flex flex-wrap justify-center items-center gap-8 opacity-60">
             {[
               'Flutter', 'Kotlin', 'Swift', 'Bloc', 'GetIt', 'GoRouter', 

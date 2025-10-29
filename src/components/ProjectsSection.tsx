@@ -5,12 +5,15 @@ import { Card } from './ui/card'
 import { Button } from './ui/button'
 import { ExternalLink, Github } from 'lucide-react'
 import { ImageWithFallback } from './figma/ImageWithFallback'
+import { useTranslation } from 'react-i18next'
 
 export function ProjectsSection() {
+  const { t } = useTranslation();
+
   const projects = [
     {
-      title: 'Rock in Rio',
-      description: 'App oficial do maior festival de música do mundo. Desenvolvido para iOS e Android com Flutter, incluindo lineup completo, agenda personalizada, mapa interativo do festival, notificações de shows e integração com redes sociais. Mais de 100k downloads.',
+      title: t('projects.items.0.title'),
+      description: t('projects.items.0.description'),
       image: 'https://images.unsplash.com/photo-1683368392119-96f38e599cea?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxyb2NrJTIwY29uY2VydCUyMGZlc3RpdmFsJTIwc3RhZ2V8ZW58MXx8fHwxNzYxNzYwNDEyfDA&ixlib=rb-4.1.0&q=80&w=1080',
       technologies: ['Flutter', 'Bloc', 'Firebase', 'Google Maps', 'Push Notifications'],
       github: 'https://github.com/jaumpelicon/',
@@ -18,8 +21,8 @@ export function ProjectsSection() {
       featured: true
     },
     {
-      title: 'The Town',
-      description: 'Aplicativo oficial do festival The Town São Paulo. Interface moderna com visualização de lineup, compra de ingressos, agenda de shows personalizada, mapa do evento e recursos de acessibilidade. Arquitetura Clean com testes unitários.',
+      title: t('projects.items.1.title'),
+      description: t('projects.items.1.description'),
       image: 'https://images.unsplash.com/photo-1611810293387-c8afe03cd7dd?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtdXNpYyUyMGZlc3RpdmFsJTIwY3Jvd2QlMjBsaWdodHN8ZW58MXx8fHwxNzYxNzI1OTM3fDA&ixlib=rb-4.1.0&q=80&w=1080',
       technologies: ['Flutter', 'Clean Architecture', 'Bloc', 'GraphQL', 'Atomic Design'],
       github: 'https://github.com/jaumpelicon/',
@@ -27,8 +30,8 @@ export function ProjectsSection() {
       featured: true
     },
     {
-      title: 'SESC MS',
-      description: 'Aplicativo do SESC Mato Grosso do Sul para gestão de atividades culturais, esportivas e educacionais. Inclui agenda de eventos, inscrições em atividades, carteirinha digital e notificações personalizadas.',
+      title: t('projects.items.2.title'),
+      description: t('projects.items.2.description'),
       image: 'https://images.unsplash.com/photo-1597226133863-eaf2f4308546?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjdWx0dXJhbCUyMGNlbnRlciUyMHRoZWF0ZXJ8ZW58MXx8fHwxNzYxNzYwNDEzfDA&ixlib=rb-4.1.0&q=80&w=1080',
       technologies: ['Flutter', 'Firebase', 'REST API', 'GetIt', 'GoRouter'],
       github: 'https://github.com/jaumpelicon/',
@@ -36,8 +39,8 @@ export function ProjectsSection() {
       featured: false
     },
     {
-      title: 'HubHouse',
-      description: 'Plataforma imobiliária mobile completa para compra, venda e aluguel de imóveis. Busca avançada com filtros, tour virtual, chat em tempo real com corretores, salvamento de favoritos e notificações de novos imóveis.',
+      title: t('projects.items.3.title'),
+      description: t('projects.items.3.description'),
       image: 'https://images.unsplash.com/photo-1738713988509-355796e88d4e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxyZWFsJTIwZXN0YXRlJTIwcHJvcGVydHklMjBob3VzZXxlbnwxfHx8fDE3NjE3NjA0MTN8MA&ixlib=rb-4.1.0&q=80&w=1080',
       technologies: ['Flutter', 'MVVM', 'Firebase', 'Google Maps', 'WebSocket'],
       github: 'https://github.com/jaumpelicon/',
@@ -45,8 +48,8 @@ export function ProjectsSection() {
       featured: false
     },
     {
-      title: 'App de Gestão Esportiva',
-      description: 'Aplicativo para academias e centros esportivos com agendamento de aulas, controle de frequência, planos de treino personalizados e integração com wearables para tracking de atividades.',
+      title: t('projects.items.4.title'),
+      description: t('projects.items.4.description'),
       image: 'https://images.unsplash.com/photo-1601106711560-ffeb65211600?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxzcG9ydHMlMjBmaXRuZXNzJTIwZ3ltfGVufDF8fHx8MTc2MTc2MDQxNHww&ixlib=rb-4.1.0&q=80&w=1080',
       technologies: ['Kotlin', 'MVVM', 'Room', 'Retrofit', 'Coroutines'],
       github: 'https://github.com/jaumpelicon/',
@@ -54,8 +57,8 @@ export function ProjectsSection() {
       featured: false
     },
     {
-      title: 'Sistema de Ingressos',
-      description: 'Plataforma de venda e validação de ingressos para eventos. QR Code dinâmico, validação offline, controle de acesso, relatórios em tempo real e integração com gateways de pagamento.',
+      title: t('projects.items.5.title'),
+      description: t('projects.items.5.description'),
       image: 'https://images.unsplash.com/photo-1652018440238-1aeb20a803a7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxldmVudCUyMHRpY2tldHMlMjBtb2JpbGV8ZW58MXx8fHwxNzYxNjk5MzI2fDA&ixlib=rb-4.1.0&q=80&w=1080',
       technologies: ['Flutter', 'Bloc', 'QR Code', 'Dio', 'Local Storage'],
       github: 'https://github.com/jaumpelicon/',
@@ -77,10 +80,10 @@ export function ProjectsSection() {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <h2 className="text-4xl md:text-5xl text-white mb-6">Projetos em Destaque</h2>
+          <h2 className="text-4xl md:text-5xl text-white mb-6">{t('projects.title')}</h2>
           <div className="w-24 h-1 bg-gradient-to-r from-emerald-400 to-blue-400 mx-auto"></div>
           <p className="text-gray-400 mt-6 max-w-2xl mx-auto">
-            Alguns dos meus projetos recentes que demonstram minhas habilidades em desenvolvimento mobile
+            {t('projects.subtitle')}
           </p>
         </motion.div>
 
@@ -153,7 +156,7 @@ export function ProjectsSection() {
           viewport={{ once: true }}
           className="mb-8"
         >
-          <h3 className="text-2xl text-white text-center mb-8">Outros Projetos</h3>
+          <h3 className="text-2xl text-white text-center mb-8">{t('projects.otherProjects')}</h3>
         </motion.div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -224,7 +227,7 @@ export function ProjectsSection() {
             className="border-emerald-500/50 text-emerald-400 hover:bg-emerald-500/10 px-8 py-3"
             onClick={() => window.open('https://github.com/jaumpelicon/', '_blank')}
           >
-            Ver Todos os Projetos
+            {t('projects.viewAll')}
           </Button>
         </motion.div>
       </div>
