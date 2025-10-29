@@ -1,6 +1,6 @@
 # Olá, eu sou o João Carlos Peliçon! Bem-vindo ao Meu Portfólio de Desenvolvedor Mobile.
 
-**[✨ Veja o site ao vivo!](https://jaumpelicon.github.io/Developerportfolio)**
+**[✨ Veja o site ao vivo!](https://jaumpelicon.github.io/developer-portfolio/)**
 
 Este repositório contém o código-fonte do meu portfólio pessoal, que também é o meu currículo interativo. Eu o projetei e desenvolvi para mostrar minhas habilidades, projetos e minha paixão por criar interfaces de usuário bonitas e funcionais.
 
