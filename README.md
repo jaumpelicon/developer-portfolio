@@ -1,4 +1,4 @@
-# Olá, eu sou o João Pedro! Bem-vindo ao Meu Portfólio de Desenvolvedor Web.
+# Olá, eu sou o João Carlos Peliçon! Bem-vindo ao Meu Portfólio de Desenvolvedor Web.
 
 **[✨ Veja o site ao vivo!](https://jaumpelicon.github.io/Developerportfolio)**
 
