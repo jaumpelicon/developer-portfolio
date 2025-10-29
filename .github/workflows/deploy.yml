@@ -39,7 +39,7 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ./dist # Vite usa 'dist', create-react-app usa 'build'
+          path: ./build
 
   deploy:
     environment:
