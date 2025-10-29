@@ -1,19 +1,20 @@
 import i18n from 'i18next';
 import { initReactI18next } from 'react-i18next';
-import LanguageDetector from 'i18next-browser-languagedetector';
+import LanguageDetector from 'i18next-browser-languagedetector'; // ← ESTAVA FALTANDO ISSO!
 
 i18n
-  .use(LanguageDetector)
+  .use(LanguageDetector) // ← Agora funciona porque foi importado
   .use(initReactI18next)
   .init({
-    debug: true,
+    debug: true, // Deixe true para ver logs no console
     fallbackLng: 'pt-BR',
     interpolation: {
-      escapeValue: false, 
+      escapeValue: false,
     },
     detection: {
-      order: ['localStorage', 'navigator'],
-      caches: ['localStorage'],
+      order: ['localStorage', 'navigator'], // Ordem de detecção
+      caches: ['localStorage'], // Salva preferência no localStorage
+      lookupLocalStorage: 'i18nextLng', // Chave no localStorage
     },
     resources: {
       'en-US': {
@@ -121,7 +122,7 @@ i18n
               subject: 'Subject',
               subjectPlaceholder: 'Project discussion',
               message: 'Message',
-              messagePlaceholder: 'Tell me about your project...', 
+              messagePlaceholder: 'Tell me about your project...',
               button: 'Send Message'
             },
             connect: {
@@ -238,7 +239,7 @@ i18n
               subject: 'Assunto',
               subjectPlaceholder: 'Discussão de projeto',
               message: 'Mensagem',
-              messagePlaceholder: 'Conte-me sobre seu projeto...', 
+              messagePlaceholder: 'Conte-me sobre seu projeto...',
               button: 'Enviar Mensagem'
             },
             connect: {

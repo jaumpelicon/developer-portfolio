@@ -1,5 +1,5 @@
 {
-      "name": "Web Developer Portfolio",
+      "name": "developer-portfolio",
       "version": "0.1.0",
       "private": true,
       "dependencies": {
@@ -67,6 +67,9 @@
       "scripts": {
             "dev": "vite",
             "build": "vite build",
+            "preview": "vite preview",
+            "predeploy": "npm run build",
+            "deploy": "gh-pages -d dist",
             "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0"
       }
 }

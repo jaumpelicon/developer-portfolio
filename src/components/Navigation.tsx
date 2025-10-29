@@ -3,6 +3,8 @@
 import { motion } from 'motion/react'
 import { useState, useEffect } from 'react'
 import { useTranslation } from 'react-i18next'
+import { LanguageSwitcher } from './LanguageSwitcher';
+
 
 export function Navigation() {
   const { t } = useTranslation();
@@ -27,9 +29,8 @@ export function Navigation() {
     <motion.nav
       initial={{ y: -100 }}
       animate={{ y: 0 }}
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        scrolled ? 'bg-black/80 backdrop-blur-md border-b border-white/10' : 'bg-transparent'
-      }`}
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${scrolled ? 'bg-black/80 backdrop-blur-md border-b border-white/10' : 'bg-transparent'
+        }`}
     >
       <div className="max-w-7xl mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
@@ -41,7 +42,7 @@ export function Navigation() {
           >
             &lt;João Peliçon /&gt;
           </motion.div>
-          
+
           <div className="hidden md:flex items-center space-x-8">
             {[
               { id: 'home', label: t('nav.home') },
@@ -62,8 +63,10 @@ export function Navigation() {
               </motion.button>
             ))}
           </div>
+          <LanguageSwitcher />
         </div>
       </div>
+
     </motion.nav>
   )
 }
