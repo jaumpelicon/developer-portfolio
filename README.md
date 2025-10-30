@@ -34,7 +34,7 @@ Para explorar o código ou rodar o projeto localmente, siga os passos abaixo:
 
 1.  **Clone o repositório:**
     ```bash
-    git clone https://github.com/jaumpelicon/Developerportfolio.git
+    git clone https://github.com/jaumpelicon/developer-portfolio.git
     ```
 2.  **Navegue até o diretório:**
     ```bash
