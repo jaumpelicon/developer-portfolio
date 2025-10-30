@@ -54,5 +54,5 @@ Para explorar o código ou rodar o projeto localmente, siga os passos abaixo:
 
 Adorei desenvolver este projeto e estou sempre em busca de novos desafios e oportunidades. Se você gostou do meu trabalho, vamos conversar!
 
-*   [**LinkedIn:**](https://www.linkedin.com/in/pelicon-joao/) 
-*   [**Email:**](mailto:peliconjoao@gmail.com)
+*   [**LinkedIn:pelicon-joao**](https://www.linkedin.com/in/pelicon-joao/) 
+*   [**Email:peliconjoao@gmail.com**](mailto:peliconjoao@gmail.com)
